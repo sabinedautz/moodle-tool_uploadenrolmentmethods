@@ -53,10 +53,16 @@ The format of the CSV file is as follows:
 * All fields are required except group and role.
 * The operations are add, del(ete) and upd(ate).
 * The supported enrolment methods are meta and cohort.
+* The shortname of the course in which you want to add/del/upd the enrolment methods
+* metacohort :
+*     if you choose method "meta", put the shortname of the course to link
+*     if you choose method "cohort", put the cohort id : cohort should already exist, cohort needs cohort id, works with category context cohort 
 * The disabled status values are 1 (disabled) or 0 (enabled).
 * Students enrolled via the method will be placed in the group specified in the group name field.
   The group will be created if it doesn't already exist.
 * The role field must be a valid role name such as editingteacher, student, etc.
+
+
 
 ## License ##
 
